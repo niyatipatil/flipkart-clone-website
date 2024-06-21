@@ -25,7 +25,7 @@ export function CarouselDemo() {
           <CarouselItem key={index} className="flex-shrink-0">
             <div className="p-1">
               <Card>
-                <CardContent className="flex items-center bg-white justify-center p-6">
+                <CardContent className="flex items-center bg-white justify-center p-6 rounded-lg">
                   <img
                     src={imageUrl}
                     alt={`Image ${index + 1}`}
