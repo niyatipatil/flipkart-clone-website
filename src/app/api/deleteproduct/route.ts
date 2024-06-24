@@ -4,22 +4,17 @@ import { deleteProductById } from "@/utils/dataHandler"; // Adjust the path base
 export async function DELETE(req: NextRequest) {
   const body = await req.json();
   const { id } = body;
-  //   console.log(id);
 
   if (!id) {
-    return NextResponse.json(
-      { error: "Product ID is required" },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: "Product ID required" }, { status: 400 });
   }
 
   const wasDeleted = deleteProductById(id);
-  //   console.log(wasDeleted)
 
   if (wasDeleted) {
     return NextResponse.json(
       {
-        message: `Product with ID ${id} deleted successfully`,
+        message: `Product with ID ${id} deleted`,
       },
       {
         status: 200,
@@ -28,7 +23,7 @@ export async function DELETE(req: NextRequest) {
   } else {
     return NextResponse.json(
       {
-        error: `Product with ID ${id} not found`,
+        error: `Product with ID ${id} was not found`,
       },
       { status: 404 }
     );

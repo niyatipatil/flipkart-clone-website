@@ -1,19 +1,16 @@
 import fs from "fs";
 import path from "path";
-
-// Define the shape of the product
 interface Product {
   id: number;
   count?: number;
-  [key: string]: any; // For additional properties
+  [key: string]: any;
 }
 
 const dataFilePath = path.join(process.cwd(), "public", "data.json");
 
-// Ensure the data file exists
 const ensureDataFileExists = (): void => {
   if (!fs.existsSync(dataFilePath)) {
-    fs.writeFileSync(dataFilePath, "[]", "utf-8"); // Create an empty array in the file
+    fs.writeFileSync(dataFilePath, "[]", "utf-8");
   }
 };
 
@@ -49,16 +46,15 @@ export const addOrUpdateProduct = (product: Product): boolean => {
 
   writeData(data);
 
-  return !existingProduct; // Return true if added, false if count was incremented
+  return !existingProduct;
 };
 
 export const deleteProductById = (id: number) => {
   let data = readData();
 
-  // Filter out the product with the specified id
   data = data.filter((product) => product.id !== id);
 
   writeData(data);
 
-  return !(data.length !== data.length); // Return true if a product was deleted, false otherwise
+  return !(data.length !== data.length);
 };

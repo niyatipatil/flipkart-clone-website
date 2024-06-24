@@ -19,7 +19,6 @@ export default function Home() {
             key={product.id}
             id={product.id}
             name={product.name}
-            //handleClick={() => productHandler(product.id)}
             rating={product.rating}
             price={product.price}
             image={product.image}

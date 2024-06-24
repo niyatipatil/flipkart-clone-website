@@ -10,7 +10,6 @@ import axios from "axios";
 interface CardProps {
   id: number;
   name: string;
-  //handleClick: (id: number) => void;
   price: number;
   rating: number;
   image: string;

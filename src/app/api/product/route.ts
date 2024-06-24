@@ -1,9 +1,9 @@
-import { addOrUpdateProduct } from "@/utils/dataHandler";
 import { NextRequest, NextResponse } from "next/server";
+import { addOrUpdateProduct } from "@/utils/dataHandler";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const product = body; // Assuming body is the product object
+  const product = body;
 
   if (!product || !product.id) {
     return NextResponse.json(

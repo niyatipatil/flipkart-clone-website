@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-// Define the shape of the customer
 interface Customer {
   email: string;
   pin: string;
@@ -14,10 +13,9 @@ interface Customer {
 
 const dataFilePath = path.join(process.cwd(), "public", "form.json");
 
-// Ensure the data file exists
 const ensureDataFileExists = (): void => {
   if (!fs.existsSync(dataFilePath)) {
-    fs.writeFileSync(dataFilePath, "[]", "utf-8"); // Create an empty array in the file
+    fs.writeFileSync(dataFilePath, "[]", "utf-8");
   }
 };
 
@@ -46,5 +44,5 @@ export const addCustomer = (customer: Customer): boolean => {
   console.log(data);
   writeData(data);
 
-  return true; // Return true if added successfully
+  return true;
 };
