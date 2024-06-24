@@ -1,0 +1,24 @@
+[
+  {
+    "first_name": "abc",
+    "last_name": "abc",
+    "email": "abc@gmail.com",
+    "phone_no": "12345",
+    "city": "Mumbai",
+    "pin_code": "201428",
+    "address": "Bandra",
+    "product_name": "boAt Airdopes Bliss Wireless Earbuds (Cool Blue)",
+    "product_price": 2099
+  },
+  {
+    "first_name": "niyati",
+    "last_name": "patil",
+    "email": "niyatip@gmail.com",
+    "phone_no": "1234567898",
+    "city": "Mumbai",
+    "pin_code": "290382",
+    "address": "Bandra",
+    "product_name": "Apple iPhone 15 Pro (128 GB Storage, Titanium)",
+    "product_price": 134900
+  }
+]

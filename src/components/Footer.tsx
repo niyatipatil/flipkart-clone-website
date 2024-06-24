@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container text-center mx-auto mt-2">
-        <span>&copy; 2024 Flipkart. All Rights Reserved</span>
+        <span>&copy; 2024 Flipkart Clone by Niyati. All Rights Reserved.</span>
       </div>
     </footer>
   );

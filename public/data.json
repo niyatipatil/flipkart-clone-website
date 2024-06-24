@@ -1,0 +1,18 @@
+[
+  {
+    "id": 2,
+    "name": "Apple iPhone 15 Pro (128 GB Storage, Titanium)",
+    "price": 134900,
+    "rating": 4.4,
+    "image": "/img2.jpg",
+    "count": 1
+  },
+  {
+    "id": 1,
+    "name": "Apple iPhone 15 (128 GB Storage, Pink)",
+    "price": 79900,
+    "rating": 4.5,
+    "image": "/img1.jpg",
+    "count": 1
+  }
+]
