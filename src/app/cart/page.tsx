@@ -13,7 +13,7 @@ interface Product {
   image: string;
   count: number;
 }
-const page = () => {
+const Page = () => {
   const [products, setProducts] = useState<Product[]>([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -78,4 +78,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
